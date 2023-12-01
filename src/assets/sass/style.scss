@@ -1,0 +1,20 @@
+@import './variables';
+@import './reset';
+@import './utils';
+
+@import './common/navbar';
+@import './common/cards';
+@import './common/circleCard';
+@import './common/aboutUs';
+@import './common/contactUs';
+@import './common/applyPopup';
+@import './common/secondaryHero';
+@import './common/footer';
+
+@import './home/primaryHero';
+@import "./home/textSecion";
+@import './home/slider';
+
+@import './ourProducts/productCards';
+
+@import './searchPage/searchResult';

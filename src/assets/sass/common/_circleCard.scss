@@ -1,0 +1,30 @@
+.circle-card {
+    flex: 0 0 222px;
+    transition: transform 0.5s;
+    .card-body {
+        .card-title {
+            color: $white;
+            font-size: $fs-16;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        .card-desc {
+            color: $lighter_grey;
+            font-size: $fs-14;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 2rem;
+        }
+    }
+    .card-footer{
+        display: flex;
+        justify-content: space-between;
+        .price-amount{
+            display: flex;
+            align-items: center;
+            gap: .2rem;
+            font-size: $fs-14;
+            line-height: 15.23px;
+            color: $white;
+        }
+    }
+}

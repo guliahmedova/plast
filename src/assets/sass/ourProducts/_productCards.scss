@@ -1,0 +1,89 @@
+.product-cards{
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top: 64px;
+        margin-bottom: 100px;
+        column-gap: 32px;
+        row-gap: 64px;
+
+
+        .circle-card {
+            flex: 0 0 222px;
+            transition: transform 0.5s;
+            .card-body {
+                .card-title {
+                    color: black;
+                    font-size: $fs-16;
+                    margin: 1.5rem 0 0.75rem 0;
+                }
+                .card-desc {
+                    color: black;
+                    font-size: $fs-14;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin-bottom: 2rem;
+                }
+            }
+            .card-footer{
+                display: flex;
+                justify-content: space-between;
+                .price-amount{
+                    display: flex;
+                    align-items: center;
+                    gap: .2rem;
+                    font-size: $fs-14;
+                    line-height: 15.23px;
+                    color: black;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1234px) {
+    .product-cards{
+        margin: 10% 0;
+        .cards{
+            width: 90%;
+            margin: 0 auto;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+@media screen and (max-width: 1043px) {
+    .product-cards{
+        .cards{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .product-cards{
+        .cards{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 560px) {
+    .product-cards{
+        margin: 15% 0;
+        .cards{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 3rem;
+            .circle-card{
+                .card-footer{
+                    display: flex;
+                    flex-direction: column-reverse;
+                    row-gap: 1rem;
+                    .price-amount{
+                        justify-content: end;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.container {
+    $max-width: 77.5rem;
+    $container-padding: 0;
+
+    width: min($max-width, 100% - ($container-padding * 2));
+    margin-inline: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.pr-hero-p-fs {
+    font-size: $fs-18;
+}
+.text-white {
+    color: $white;
+}
+.fw-regular {
+    font-weight: 400;
+}
+.fw-bold {
+    font-weight: 700;
+}
+.fs-pr-hero {
+    font-size: $fs-pr-hero;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.btn-success {
+    background-color: $main_green;
+    color: $white;
+}
+.btn-secondary {
+    background-color: $lighter_grey;
+    color: black;
+}
+.btn {
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    border: 0;
+    $btn-fs-size: $fs-14;
+    font-size: $btn-fs-size;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sec-mr-block {
+    margin-block: 4.75rem;
+}

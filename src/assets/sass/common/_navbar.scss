@@ -1,0 +1,132 @@
+.header {
+    padding-block: 2.5rem;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    .container {
+        position: relative;
+        .haburger-menu-active {
+            position: absolute;
+            top: 0px;
+            z-index: 999;
+            right: 0px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 1rem;
+            display: none;
+            img {
+                filter: brightness(3.5);
+            }
+        }
+        .haburger-menu {
+            position: absolute;
+            top: 0px;
+            z-index: 999;
+            right: 0px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 1rem;
+            img {
+                filter: invert(1);
+            }
+            display: none;
+        }
+    }
+
+    .primary-nav {
+        display: flex;
+        align-items: center;
+        gap: clamp(1.25rem, 10vw, 3.25rem);
+        color: $white;
+        font-size: $navbar-fs;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        .nav-item {
+            position: relative;
+
+            .nav-dot {
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                top: 8px;
+                margin: 0 24px;
+                background-color: white;
+                border-radius: 50%;
+            }
+        }
+
+        .active-link {
+            font-weight: 700;
+        }
+    }
+
+    .lang-dropdown {
+       background-color: $main_green;
+       padding: 7px;
+       border-radius: 2px;
+       color: white;
+    }
+}
+
+@media only screen and (max-width: 1287px) {
+    .header {
+        padding-inline: 2rem;
+    }
+}
+@media only screen and (max-width: 1037px) {
+    .header {
+        .header-nav {
+            flex-direction: column;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            height: auto;
+            padding: 4rem;
+            display: none;
+            .logo {
+                display: none;
+            }
+
+            .primary-nav {
+                color: black;
+                display: flex;
+                margin-bottom: 2rem;
+                flex-direction: column;
+                a {
+                    .nav-dot {
+                        display: none;
+                    }
+                }
+            }
+            .right {
+                gap: 1rem;
+                .search-link {
+                    img {
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+        .container {
+            .haburger-menu {
+                display: block;
+            }
+            .haburger-menu-active {
+                display: block;
+            }
+        }
+        .active-header-nav {
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+}

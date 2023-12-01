@@ -1,0 +1,41 @@
+.text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 5vw, $fs-sc-hero);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height:176px;
+    width: 100%;
+    position: relative;
+
+    .down-arrow {
+        position: absolute;
+        top: 100%;
+        border-top: 40px solid transparent;
+        border-top-color: inherit;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        margin-block: auto;
+    }
+
+    .white {
+        color: $white;
+    }
+    .green {
+        color: $main_green;
+    }
+    .black {
+        color: $black;
+    }
+    .mr {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .text-section{
+        height: 20vh;
+    }
+}

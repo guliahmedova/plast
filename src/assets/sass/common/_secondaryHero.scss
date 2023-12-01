@@ -1,0 +1,91 @@
+.secondary-hero {
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+    }
+
+    .secondary-hero-content {
+        margin-top: 4rem;
+        text-align: center;
+        position: absolute;
+        z-index: 2;
+        .hero-title {
+            font-size: clamp(1.5rem, 5vw, $fs-sc-hero);
+            color: white;
+            text-transform: uppercase;
+        }
+        .sub-title {
+            align-items: center;
+            color: white;
+            justify-content: center;
+            gap: 8px;
+            & :nth-child(1) {
+                font-size: $fs-12;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+            & :nth-child(3) {
+                font-size: $fs-12;
+                font-weight: 500;
+            }
+        }
+
+        .search-div {
+            position: relative;
+            background-color: white;
+            border-radius: 16px;
+            min-width: 556px;
+            margin-top: 2rem;
+            input {
+                width: 100%;
+                height: 100%;
+                padding: 1rem;
+                border-radius: 16px;
+                border: 0;
+                outline: 0;
+                font-size: 14px;
+                font-weight: 400;
+                color: black;
+            }
+            .search-icon {
+                position: absolute;
+                top: 13px;
+                right: 16px;
+                cursor: pointer;
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .secondary-hero {
+        .secondary-hero-content {
+            width: 80%;
+            .search-div {
+                min-width: 0;
+                width: 100%;
+                
+            }
+        }
+    }
+}

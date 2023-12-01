@@ -1,0 +1,35 @@
+$white: #ffffff;
+$main_green: #00ad33;
+$black: #2c2c2c;
+$lighter_grey: #f8f8f7;
+$dark_grey: #4d504b;
+
+$fs-14: 0.875rem;
+$fs-16: 1rem;
+$fs-18: 1.125rem;
+$fs-12: 0.75rem;
+$fs-24: 1.5rem;
+
+$fs-pr-hero: 3.625rem;  
+$fs-sc-hero: 2.75rem;
+
+$fs-pr-btn: $fs-14;
+$fs-sc-btn: $fs-12;
+
+$fs-p: $fs-14;
+
+$fs-ftr-h: $fs-24;
+$fs-ftr-p: $fs-14;
+
+$navbar-fs: $fs-14;
+
+
+@font-face {
+    font-family: 'Archivo-Bold';
+    src: url('../fonts/Archivo-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Archivo-Regular';
+    src: url('../fonts/Archivo-Regular.ttf');
+}

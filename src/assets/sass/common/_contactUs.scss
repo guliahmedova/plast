@@ -1,0 +1,106 @@
+.contact-us {
+    background-color: black;
+    padding: 7rem 0;
+    height: auto;
+    form {
+        .form-group {
+            width: 100%;
+            margin-bottom: 5rem;
+            position: relative;
+            input {
+                width: 100%;
+                border-radius: 16px;
+                border: 1px solid gray;
+                background-color: transparent;
+                padding: 1rem;
+                font-size: $fs-14;
+                font-weight: 400;
+                color: white;
+                position: absolute;
+                transition: 0.2s ease all;
+                z-index: 111;
+                &:focus {
+                    outline: $main_green;
+                    transition: 0.3s all ease-in-out;
+                    border-color: $main_green;
+                }
+            }
+        }
+        .msg-area {
+            width: 100%;
+            position: relative;
+            textarea {
+                width: 100%;
+                border-radius: 16px;
+                border: 1px solid gray;
+                background-color: transparent;
+                padding: 1rem;
+                font-size: $fs-14;
+                font-weight: 400;
+                color: white;
+                min-height: 116px;
+                margin-bottom: 3rem;
+                position: absolute;
+                z-index: 111;
+                resize: none;
+                transition: 0.2s all ease;
+                &:focus {
+                    outline: $main_green;
+                    transition: 0.3s all ease-in-out;
+                    border-color: $main_green;
+                }
+            }
+        }
+
+        .label-line {
+            position: absolute;
+            transition: 0.2s all ease-in-out;
+            color: white;
+            top: 20px;
+            left: 24px;
+            color: $dark_grey;
+            font-size: $fs-16;
+            font-weight: 400;
+            line-height: 16.51px;
+            background-color: black;
+        }
+
+        input:focus + .label-line,
+        textarea:focus + .label-line {
+            line-height: 11.79px;
+            padding: 0 12px;
+            transform: translate(-15px, -25px) scale(0.88);
+            z-index: 1111;
+            font-size: 14px;
+            color: white;
+        }
+        .form_btn {
+            margin-top: 9rem;
+        }
+    }
+}
+@media only screen and (max-width: 1234px) {
+    .contact-us {
+        form {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+@media only screen and (max-width: 680px) {
+    .contact-us {
+        form {
+            width: 90%;
+            margin: 0 auto;
+            .form-group {
+                input {
+                    width: 100%;
+                }
+            }
+            .input-groups {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    }
+}
