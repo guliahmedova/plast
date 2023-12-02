@@ -1,6 +1,6 @@
 import React, { createContext, useContext, ReactNode, useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
-import closepopup from '/images/closePopup.svg';
+import closepopup from '../assets/images/closePopup.svg';
 
 interface ModalContextProps {
     children: ReactNode;
